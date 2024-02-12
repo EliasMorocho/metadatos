@@ -1,0 +1,30 @@
+{
+  "name": "youtube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "compromise": "^14.11.0",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.3",
+    "mkcert": "^3.2.0",
+    "natural": "^6.10.4",
+    "openai": "^4.24.1",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "scrape-youtube": "^2.4.0",
+    "scrape-yt": "^1.4.8",
+    "stopword": "^3.0.1"
+  }
+}

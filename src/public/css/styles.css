@@ -1,0 +1,80 @@
+/* public/css/styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% del viewport height */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.site-header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main-navigation ul li:first-child {
+    margin-left: 0; /* Para eliminar el margen izquierdo del primer elemento */
+}
+
+.main-navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.main-content {
+    flex: 1; /* Ocupa el espacio restante vertical */
+    padding: 40px 0;
+}
+
+.hero-section {
+    text-align: center;
+}
+
+.featured-products {
+    margin-top: 30px;
+}
+
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto; /* Empuja el pie de página hacia la parte inferior */
+}

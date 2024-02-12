@@ -1,0 +1,28 @@
+# Dependencias
+node_modules/
+
+# Configuración de npm
+npm-debug.log
+yarn-error.log
+
+# Archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Entorno de desarrollo
+.env
+.env.local
+.env.*.local
+
+# Carpeta de construcción
+build/
+dist/
+out/
+
+# Otras carpetas específicas del proyecto
+.cache/
+
+# Archivos de configuración locales
+*.sublime-project
+*.sublime-workspace
+*.vscode/

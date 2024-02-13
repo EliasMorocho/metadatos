@@ -12,7 +12,7 @@ const youtubeController = require('./src/controllers/youtubeController');
 const authController = require('./src/controllers/authController');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;;
 
 app.set('views', path.join(__dirname, 'src', 'views'));
 

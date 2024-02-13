@@ -34,7 +34,10 @@ async function getFilteredTags(query, precisionLevel) {
 
   return {
     keywords: keys,
-    titles: tts
+    titles: tts,
+    allTags,
+    uniqueTags,
+    personNames,
   };
 }
 

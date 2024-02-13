@@ -3,21 +3,23 @@ const express = require('express');
 const path = require('path');
 const session = require('express-session');
 const passport = require('passport');
-const LocalStrategy = require('passport-local').Strategy;
+
 const crypto = require('crypto');
 const bodyParser = require('body-parser');
-const userController = require('./controllers/userController');
-const pageController = require('./controllers/pageController');
-const youtubeController = require('./controllers/youtubeController');
-const authController = require('./controllers/authController');
+const userController = require('./src/controllers/userController');
+const pageController = require('./src/controllers/pageController');
+const youtubeController = require('./src/controllers/youtubeController');
+const authController = require('./src/controllers/authController');
 
 const app = express();
 const port = 3000;
 
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'src', 'views'));
+
 app.set('view engine', 'ejs');
 
-app.use(express.static(path.join(__dirname, 'public')));
+console.log(__dirname);
+app.use(express.static(path.join(__dirname, 'src','public')));
 
 // Configuración de sesión
 app.use(session({
